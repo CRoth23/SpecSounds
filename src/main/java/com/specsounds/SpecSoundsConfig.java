@@ -8,12 +8,13 @@ import net.runelite.client.config.ConfigItem;
 public interface SpecSoundsConfig extends Config
 {
 	@ConfigItem(
-		keyName = "greeting",
-		name = "Welcome Greeting",
-		description = "The message to show to the user when they login"
+			keyName = "dragonAxeSpecSound",
+			name = "Dragon axe spec",
+			description = "New sound when player uses dragon axe special attack",
+			position = 0
 	)
-	default String greeting()
+	default boolean playDragonAxeSpecSound()
 	{
-		return "Hello";
+		return true;
 	}
 }
